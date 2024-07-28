@@ -52,6 +52,7 @@ public class userCardAdapter extends ArrayAdapter<User> {
             holder = new ViewHolder();
             holder.imageView = listItemView.findViewById(R.id.profileCard_Image);
             holder.username = listItemView.findViewById(R.id.profileCard_Username);
+            holder.contact = listItemView.findViewById(R.id.profileCard_Contact);
 
             listItemView.setTag(holder);
         } else {
@@ -64,6 +65,7 @@ public class userCardAdapter extends ArrayAdapter<User> {
         // Set the data into the views
         holder.imageView.setImageResource(currentUser.getImage());
         holder.username.setText(currentUser.getUsername());
+        holder.contact.setText(currentUser.getUsername());
 
         return listItemView;
     }
@@ -71,5 +73,6 @@ public class userCardAdapter extends ArrayAdapter<User> {
     static class ViewHolder {
         ImageView imageView;
         TextView username;
+        TextView contact;
     }
 }

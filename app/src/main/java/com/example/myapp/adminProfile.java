@@ -109,7 +109,7 @@ public class adminProfile extends Fragment {
         }
         usersList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                Intent i = new Intent(getActivity(), uploadDetails.class);
+                Intent i = new Intent(getActivity(), profileDetails.class);
                 i.putExtra("search_id", data[position].getUserId());
                 startActivity(i);
             }
