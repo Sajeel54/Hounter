@@ -65,7 +65,7 @@ public class userCardAdapter extends ArrayAdapter<User> {
         // Set the data into the views
         holder.imageView.setImageResource(currentUser.getImage());
         holder.username.setText(currentUser.getUsername());
-        holder.contact.setText(currentUser.getUsername());
+        holder.contact.setText(currentUser.getContact());
 
         return listItemView;
     }

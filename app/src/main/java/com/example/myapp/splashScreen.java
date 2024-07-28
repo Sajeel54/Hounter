@@ -3,24 +3,20 @@ package com.example.myapp;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.myapp.DBhelpers.propertyHelper;
-import com.example.myapp.DBhelpers.userHelper;
 import com.example.myapp.dbControls.propertyControl;
 import com.example.myapp.dbControls.userControl;
 
-public class MainActivity extends AppCompatActivity {
+public class splashScreen extends AppCompatActivity {
     propertyControl dbPropertyControl;
     userControl dbUserControl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash_screen);
 
         dbPropertyControl = new propertyControl(this);
         dbUserControl = new userControl(this);
@@ -37,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 Intent in;
                 if (isLoggedIn)
-                    in = new Intent(MainActivity.this, NavContent.class);
+                    in = new Intent(splashScreen.this, NavContent.class);
                 else
-                    in = new Intent(MainActivity.this, signup.class);
+                    in = new Intent(splashScreen.this, signup.class);
 
                 in.putExtra("fragment", "home");
                 startActivity(in);
