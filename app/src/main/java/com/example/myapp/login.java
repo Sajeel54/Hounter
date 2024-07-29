@@ -36,8 +36,10 @@ public class login extends AppCompatActivity {
             public void onClick(View view) {
                 String username = getUsername.getText().toString();
                 String password = getPassword.getText().toString();
-                SharedPreferences sharedPreferences = getSharedPreferences("UserPreferences", Context.MODE_PRIVATE);
+                SharedPreferences sharedPreferences = getSharedPreferences("UserPreferences",
+                        Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
+
                 Intent in = new Intent(login.this, NavContent.class);
 
                 if (!(username.isEmpty() || password.isEmpty())) {

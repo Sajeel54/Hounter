@@ -44,7 +44,8 @@ public class profile extends Fragment {
 
         ListView listView = view.findViewById(R.id.uploadsList);
 
-        SharedPreferences sharedPreferences = getContext().getSharedPreferences("UserPreferences", Context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getContext().getSharedPreferences("UserPreferences",
+                Context.MODE_PRIVATE);
         String userId = sharedPreferences.getString("userId", "");
 
         userControl dbUserControl = new userControl(getContext());
@@ -73,13 +74,11 @@ public class profile extends Fragment {
             });
         }
         Button btnRegister = view.findViewById(R.id.redirect_to_registry);
-
         btnRegister.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(getActivity(), registerProperty.class);
                 startActivity(in);
-//                Toast.makeText(getContext(), "user id = "+userId, Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -6,53 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".marketplace">
 
-    <!-- TODO: Update blank fragment layout -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <!-- ScrollView to handle scrolling content -->
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- First Card: Heading and Button -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="100sp"
             android:orientation="vertical"
             android:background="@drawable/liner_gradient"
-            android:layout_marginHorizontal="12sp"
-            android:paddingVertical="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_marginBottom="12dp"
+            android:padding="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="20sp"
+                android:padding="20dp"
                 android:text="MarketPlace"
                 android:textAlignment="center"
                 android:textSize="40sp" />
-
-            <ListView
-                android:id="@+id/marketplaceList"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="end"
-                android:padding="10sp">
+                android:paddingTop="10dp">
 
                 <Button
                     android:id="@+id/btn_reload"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10sp"
+                    android:layout_marginHorizontal="10dp"
                     android:background="@drawable/btn_primary"
-                    android:text="reload" />
+                    android:text="Reload" />
             </LinearLayout>
         </LinearLayout>
 
-    </ScrollView>
+        <!-- Second Card: ListView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/liner_gradient"
+            android:padding="16dp"
+            android:layout_marginBottom="25dp">
+
+            <ListView
+                android:id="@+id/marketplaceList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
 
 </FrameLayout>

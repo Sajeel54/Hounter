@@ -38,7 +38,7 @@
                 android:gravity="center"
                 android:text="Signup"
                 android:textColor="#FFFFFF"
-                android:textSize="34sp" />
+                android:textSize="34sp" /> <!--signup title-->
 
             <EditText
                 android:id="@+id/signup_username"
@@ -53,7 +53,7 @@
                 android:paddingVertical="12dp"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                app:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintWidth_percent="0.9" /> <!--username input-->
 
             <EditText
                 android:id="@+id/signup_password"
@@ -69,7 +69,7 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:inputType="textPassword"
-                app:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintWidth_percent="0.9" /> <!--password input-->
 
             <EditText
                 android:id="@+id/signup_confirmPassword"
@@ -85,7 +85,7 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:inputType="textPassword"
-                app:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintWidth_percent="0.9" /> <!--confirm password-->
 
             <EditText
                 android:id="@+id/signup_contact"
@@ -100,7 +100,7 @@
                 android:paddingVertical="12dp"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                app:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintWidth_percent="0.9" /> <!--contact input-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -115,7 +115,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/input_control"
                     android:text="Signup" />
-            </LinearLayout>
+            </LinearLayout> <!--submit -->
             <TextView
                 android:id="@+id/redirect_to_Login"
                 android:layout_width="match_parent"
@@ -129,7 +129,7 @@
                 android:paddingVertical="12dp"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
-                app:layout_constraintWidth_percent="0.9"/>
+                app:layout_constraintWidth_percent="0.9"/> <!--login redirect-->
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

@@ -28,16 +28,16 @@ public class propertyControl {
     private static final String COLUMN_ROOMS = "rooms";
 
     private static List<property> properties = Arrays.asList(
-            new property("p001", "user01", R.drawable.house_cardimage, "$1000", "Spacious 2-bedroom apartment", "123 Main St", 2),
-            new property("p002", "user02", R.drawable.house_cardimage, "$1500", "Modern 3-bedroom house", "456 Elm St", 3),
-            new property("p003", "user03", R.drawable.house_cardimage, "$1200", "Cozy 1-bedroom condo", "789 Maple Ave", 1),
-            new property("p004", "user04", R.drawable.house_cardimage, "$2000", "Luxury 4-bedroom villa", "101 Pine St", 4),
-            new property("p005", "user05", R.drawable.house_cardimage, "$950", "Affordable studio apartment", "202 Oak St", 1),
-            new property("p006", "user06", R.drawable.house_cardimage, "$1100", "Charming 2-bedroom cottage", "303 Birch St", 2),
-            new property("p007", "user07", R.drawable.house_cardimage, "$1300", "Stylish 3-bedroom townhouse", "404 Cedar St", 3),
-            new property("p008", "user08", R.drawable.house_cardimage, "$1700", "Elegant 4-bedroom mansion", "505 Walnut St", 4),
-            new property("p009", "user09", R.drawable.house_cardimage, "$1400", "Spacious 3-bedroom duplex", "606 Chestnut St", 3),
-            new property("p010", "user10", R.drawable.house_cardimage, "$1600", "Modern 2-bedroom loft", "707 Redwood St", 2)
+            new property("p001", "user01", R.drawable.house_cardimage, "1000", "Spacious 2-bedroom apartment", "123 Main St", 2),
+            new property("p002", "user02", R.drawable.house_cardimage, "1500", "Modern 3-bedroom house", "456 Elm St", 3),
+            new property("p003", "user03", R.drawable.house_cardimage, "1200", "Cozy 1-bedroom condo", "789 Maple Ave", 1),
+            new property("p004", "user04", R.drawable.house_cardimage, "2000", "Luxury 4-bedroom villa", "101 Pine St", 4),
+            new property("p005", "user05", R.drawable.house_cardimage, "950", "Affordable studio apartment", "202 Oak St", 1),
+            new property("p006", "user06", R.drawable.house_cardimage, "1100", "Charming 2-bedroom cottage", "303 Birch St", 2),
+            new property("p007", "user07", R.drawable.house_cardimage, "1300", "Stylish 3-bedroom townhouse", "404 Cedar St", 3),
+            new property("p008", "user08", R.drawable.house_cardimage, "1700", "Elegant 4-bedroom mansion", "505 Walnut St", 4),
+            new property("p009", "user09", R.drawable.house_cardimage, "1400", "Spacious 3-bedroom duplex", "606 Chestnut St", 3),
+            new property("p010", "user10", R.drawable.house_cardimage, "1600", "Modern 2-bedroom loft", "707 Redwood St", 2)
     );
 
     public propertyControl(Context context){

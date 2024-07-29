@@ -37,7 +37,7 @@
                 android:gravity="center"
                 android:text="Upload Details to MarketPlace"
                 android:textColor="#FFFFFF"
-                android:textSize="34sp" />
+                android:textSize="34sp" /> <!--title-->
 
             <EditText
                 android:id="@+id/registerProperty_price"
@@ -52,7 +52,7 @@
                 android:paddingVertical="12dp"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                app:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintWidth_percent="0.9" /> <!--price input-->
 
             <EditText
                 android:id="@+id/registerProperty_desc"
@@ -67,7 +67,7 @@
                 android:paddingVertical="12dp"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                app:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintWidth_percent="0.9" /> <!--desc input-->
 
             <EditText
                 android:id="@+id/registerProperty_address"
@@ -82,7 +82,7 @@
                 android:paddingVertical="12dp"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                app:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintWidth_percent="0.9" /> <!--addresss input-->
 
             <EditText
                 android:id="@+id/registerProperty_rooms"
@@ -97,7 +97,7 @@
                 android:paddingVertical="12dp"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                app:layout_constraintWidth_percent="0.9" />
+                app:layout_constraintWidth_percent="0.9" /> <!--no of rooms input-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -121,7 +121,7 @@
                     android:text="Upload"
                     android:id="@+id/registerProperty_upload"
                     android:layout_marginHorizontal="10sp"/>
-            </LinearLayout>
+            </LinearLayout> <!--submit and back buttons-->
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

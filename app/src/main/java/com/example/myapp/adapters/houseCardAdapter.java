@@ -58,7 +58,7 @@ public class houseCardAdapter extends ArrayAdapter<property> {
 
         // Set the data into the views
         holder.imageView.setImageResource(currentProperty.getImage_res()); // Assuming property has an image resource ID
-        holder.itemTitle.setText("Rs."+currentProperty.getPrice()); // Assuming property has a title
+        holder.itemTitle.setText("$"+currentProperty.getPrice()); // Assuming property has a title
         holder.descTextView.setText(currentProperty.getDesc()); // Assuming property has a description
 
         return listItemView;

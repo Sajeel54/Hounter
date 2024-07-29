@@ -68,7 +68,8 @@ public class registerProperty extends AppCompatActivity {
                 String pro_id = generateUniqueId();
 
 
-                property pro = new property(pro_id, userId, R.drawable.house_cardimage, price, desc, address, Integer.parseInt(rooms));
+                property pro = new property(pro_id, userId, R.drawable.house_cardimage, price, desc, address,
+                        Integer.parseInt(rooms));
 
                 if (!(price.isEmpty() || desc.isEmpty() ||
                         address.isEmpty() || rooms.isEmpty() || user_id.isEmpty())){
@@ -82,7 +83,7 @@ public class registerProperty extends AppCompatActivity {
                     i.putExtra("fragment", "profile");
                     startActivity(i);
                 } else {
-                    Toast.makeText(registerProperty.this, "Alert: An input field is empty" + userId, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(registerProperty.this, "Alert: An input field is empty", Toast.LENGTH_SHORT).show();
                 }
             }
         });

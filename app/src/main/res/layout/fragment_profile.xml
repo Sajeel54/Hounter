@@ -63,7 +63,7 @@
 
                 </LinearLayout>
 
-            </LinearLayout>
+            </LinearLayout> <!--profile setup-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -107,7 +107,7 @@
                         android:text="add new post"
                         android:textSize="20sp"/>
                 </LinearLayout>
-            </LinearLayout>
+            </LinearLayout> <!--list of properties uploaded vy logged in user-->
         </LinearLayout>
 
     </ScrollView>

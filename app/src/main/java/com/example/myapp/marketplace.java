@@ -69,7 +69,8 @@ public class marketplace extends Fragment {
         if (properties.isEmpty()) {
             Toast.makeText(context, "No properties found", Toast.LENGTH_SHORT).show();
             properties = new ArrayList<>();
-            properties.add(new property("","", R.drawable.house_cardimage,"","No properties found","",0)); // Assuming you have a 'no_image' drawable
+            properties.add(new property("","", R.drawable.house_cardimage,"",
+                    "No properties found","",0)); // Assuming you have a 'no_image' drawable
         }
 
         property[] data = properties.toArray(new property[0]);
