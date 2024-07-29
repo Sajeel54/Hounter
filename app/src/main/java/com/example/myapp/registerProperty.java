@@ -82,7 +82,7 @@ public class registerProperty extends AppCompatActivity {
                     i.putExtra("fragment", "profile");
                     startActivity(i);
                 } else {
-                    Toast.makeText(registerProperty.this, "Alert: An input field is empty", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(registerProperty.this, "Alert: An input field is empty" + userId, Toast.LENGTH_SHORT).show();
                 }
             }
         });

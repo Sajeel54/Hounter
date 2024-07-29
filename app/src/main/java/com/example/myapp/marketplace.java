@@ -84,7 +84,7 @@ public class marketplace extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
                 Intent i = new Intent(getActivity(), marketDetails.class);
-                i.putExtra("search_id", data[position].getId());
+                i.putExtra("search_id", data[(int)id].getP_id()+"");
                 startActivity(i);
             }
         });

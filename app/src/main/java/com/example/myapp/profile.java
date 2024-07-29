@@ -50,27 +50,28 @@ public class profile extends Fragment {
         userControl dbUserControl = new userControl(getContext());
         User profileSetup = dbUserControl.getUserById(userId);
 
-        TextView displayUsername = (TextView) view.findViewById(R.id.display_username);
-        displayUsername.setText(profileSetup.getUsername());
-        ImageView displayImage = (ImageView) view.findViewById(R.id.display_picture);
-        displayImage.setImageResource(profileSetup.getImage());
+        if(profileSetup != null) {
+            TextView displayUsername = (TextView) view.findViewById(R.id.display_username);
+            displayUsername.setText(profileSetup.getUsername());
+            ImageView displayImage = (ImageView) view.findViewById(R.id.display_picture);
+            displayImage.setImageResource(profileSetup.getImage());
 
-        List<property> properties = dbControl.getPropertyByUserId(userId);
+            List<property> properties = dbControl.getPropertyByUserId(userId);
 
-        // Create adapter
-        houseCardAdapter adapter = new houseCardAdapter(getActivity(), properties.toArray(new property[0]));
+            // Create adapter
+            houseCardAdapter adapter = new houseCardAdapter(getActivity(), properties.toArray(new property[0]));
 
-        // Set adapter to ListView
-        listView.setAdapter(adapter);
+            // Set adapter to ListView
+            listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
-        {
-            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                Intent i = new Intent(getActivity(), uploadDetails.class);
-                i.putExtra("search_id", properties.get(position).getId());
-                startActivity(i);
-            }
-        });
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                    Intent i = new Intent(getActivity(), uploadDetails.class);
+                    i.putExtra("search_id", properties.get((int) id).getId());
+                    startActivity(i);
+                }
+            });
+        }
         Button btnRegister = view.findViewById(R.id.redirect_to_registry);
 
         btnRegister.setOnClickListener(new View.OnClickListener(){

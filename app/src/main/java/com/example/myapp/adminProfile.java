@@ -110,7 +110,7 @@ public class adminProfile extends Fragment {
         usersList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
                 Intent i = new Intent(getActivity(), profileDetails.class);
-                i.putExtra("search_id", data[position].getUserId());
+                i.putExtra("user_id", data[(int)id].getUserId());
                 startActivity(i);
             }
         });
@@ -141,7 +141,7 @@ public class adminProfile extends Fragment {
         uploadsList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
                 Intent i = new Intent(getActivity(), uploadDetails.class);
-                i.putExtra("search_id", finalProperties.get(position).getId());
+                i.putExtra("search_id", finalProperties.get((int)id).getId());
                 startActivity(i);
             }
         });

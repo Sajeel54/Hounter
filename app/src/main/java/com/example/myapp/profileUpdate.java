@@ -31,7 +31,7 @@ public class profileUpdate extends AppCompatActivity {
         // Initialize EditText fields
         EditText usernameEditText = findViewById(R.id.userUpdate_username);
         EditText nPasswordEditText = findViewById(R.id.userUpdate_password);
-        EditText opasswordEditText = findViewById(R.id.userUpdate_password);
+        EditText opasswordEditText = findViewById(R.id.userUpdate_oldPassword);
         EditText contactEditText = findViewById(R.id.userUpdate_contact);
         ImageView profileImageView = findViewById(R.id.user_profile_image);
 
@@ -79,8 +79,9 @@ public class profileUpdate extends AppCompatActivity {
                         // Notify user and go back to user details activity
                         if (result != 0)
                             Toast.makeText(profileUpdate.this, "User details updated", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(profileUpdate.this, profile.class);
+                        Intent intent = new Intent(profileUpdate.this, NavContent.class);
                         intent.putExtra("user_id", userId);
+                        intent.putExtra("fragment", "profile");
                         startActivity(intent);
                     } else {
                         Toast.makeText(profileUpdate.this, "Incorrect Password", Toast.LENGTH_SHORT).show();
